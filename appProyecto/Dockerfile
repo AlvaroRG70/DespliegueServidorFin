@@ -13,9 +13,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copia el resto del código de la aplicación en el contenedor
 COPY . .
 
-# Crear directorio media y establecer permisos
-RUN mkdir -p /app/media && chmod -R 755 /app/media
-
 # Expone el puerto en el que la aplicación correrá
 EXPOSE 8000
 

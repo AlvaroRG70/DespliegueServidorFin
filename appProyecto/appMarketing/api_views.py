@@ -43,7 +43,7 @@ class emailContacto(APIView):
     def post(self, request):
         try:
 
-            username = request.data.get('nombre') 
+            username = request.data.get('email_contact') 
             email_contact = request.data.get('email_contact') 
             subject = f'Cliente {username}, {email_contact}'
             message = request.data.get('message')
